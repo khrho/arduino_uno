@@ -1,0 +1,15 @@
+int led = 13;                    // Built-in LED에 연결된 GPIO Pin 번호
+
+void setup()
+{ 
+    pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+    digitalWrite(led, HIGH);    // turn the LED on
+    delay(1000);                // wait for a second, 단위: msec (1000 = 1sec)
+
+    digitalWrite(led, LOW);     // turn the LED off
+    delay(1000);                // wait for a second
+}
